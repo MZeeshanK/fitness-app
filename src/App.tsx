@@ -5,10 +5,11 @@ import Home from "./scenes/Home";
 import Benifits from "./scenes/Benifits";
 import OurClasses from "./scenes/OurClasses";
 import ContactUs from "./scenes/ContactUs";
+import Footer from "./scenes/Footer";
 
 export default function App() {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(
-    SelectedPage.Home,
+    SelectedPage.Home
   );
   const [isTopOfPage, setIsTopOfPage] = useState(false);
 
@@ -37,6 +38,7 @@ export default function App() {
       <Benifits setSelectedPage={setSelectedPage} />
       <OurClasses setSelectedPage={setSelectedPage} />
       <ContactUs setSelectedPage={setSelectedPage} />
+      <Footer />
     </div>
   );
 }
