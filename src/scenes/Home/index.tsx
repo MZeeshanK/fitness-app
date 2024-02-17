@@ -25,7 +25,7 @@ export default function Home({ setSelectedPage }: Props) {
         <div className="z-10 mt-32 md:basis-3/5">
           {/* headings */}
           <motion.div
-          className="md:-mt-20"
+            className="md:-mt-20"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
@@ -50,7 +50,7 @@ export default function Home({ setSelectedPage }: Props) {
 
           {/* Buttons */}
           <motion.div
-            className="mt-8 flex items-center gap-8 md:justify-start"
+          className="mt-8 flex items-center gap-8 md:justify-start"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}

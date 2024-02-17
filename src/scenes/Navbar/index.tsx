@@ -23,8 +23,6 @@ export default function Navbar({
   const [isMenuToggled, setIsMenuToggled] = useState(false);
   const navbarBackground = isTopOfPage ? "" : "bg-primary-100 drop-shadow";
 
-  console.log(isTopOfPage);
-
   return (
     <nav>
       <div
@@ -47,7 +45,7 @@ export default function Navbar({
                   />
 
                   <Link
-                    page="Benifits"
+                    page="Benefits"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
                   />

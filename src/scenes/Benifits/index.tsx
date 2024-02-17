@@ -42,7 +42,6 @@ type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 };
 
-console.log(SelectedPage.Benefits)
 
 export default function Benefits({ setSelectedPage }: Props) {
   return (

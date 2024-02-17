@@ -1,15 +1,15 @@
-import { ClassType } from "@/shared/types"
+import { ClassType } from "@/shared/types";
 
 type Props = {
-  item:ClassType
-}
+  item: ClassType;
+};
 
-export default function Class({item}: Props) {
-  const {name, description, image} = item
+export default function Class({ item }: Props) {
+  const { name, description, image } = item;
 
-  const overlayStyles = `p-5 absolute z-30 flex h-[380px] w-[450px] flex-col items-center 
+  const overlayStyles = `p-5 absolute flex h-[380px] w-[450px] flex-col items-center 
   justify-center whitespace-normal bg-primary-500 text-center text-white 
-  opacity-0 transition duration-500 hover:opacity-90`
+  opacity-0 transition duration-500 hover:opacity-90`;
 
   return (
     <li className="relative mx-5 inline-block h-[380px] w-[450px]">
@@ -18,6 +18,6 @@ export default function Class({item}: Props) {
         <p className="mt-5">{description}</p>
       </div>
       <img src={image} alt={`${image}`} />
-</li>
-  )
+    </li>
+  );
 }
