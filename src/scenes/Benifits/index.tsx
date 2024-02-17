@@ -42,6 +42,8 @@ type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 };
 
+console.log(SelectedPage.Benefits)
+
 export default function Benefits({ setSelectedPage }: Props) {
   return (
     <section id="benefits" className="mx-auto min-h-full w-5/6 py-20">

@@ -25,9 +25,9 @@ export default function Home({ setSelectedPage }: Props) {
         <div className="z-10 mt-32 md:basis-3/5">
           {/* headings */}
           <motion.div
+          className="md:-mt-20"
             initial="hidden"
             whileInView="visible"
-            className="md:-mt-20"
             viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 0.5 }}
             variants={{
